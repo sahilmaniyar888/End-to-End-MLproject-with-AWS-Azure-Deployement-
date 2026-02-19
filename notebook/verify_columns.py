@@ -2,7 +2,9 @@ import pandas as pd
 import os
 
 try:
-    df = pd.read_csv('data/stud.csv')
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir, 'data', 'stud.csv')
+    df = pd.read_csv(csv_path)
     print("Columns in dataframe:")
     print(df.columns.tolist())
     

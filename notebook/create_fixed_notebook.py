@@ -1,8 +1,9 @@
 import json
 import os
 
-input_path = '1 . EDA STUDENT PERFORMANCE .ipynb'
-output_path = '1_EDA_STUDENT_PERFORMANCE_FIXED.ipynb'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+input_path = os.path.join(base_dir, '1 . EDA STUDENT PERFORMANCE .ipynb')
+output_path = os.path.join(base_dir, '1_EDA_STUDENT_PERFORMANCE_FIXED.ipynb')
 
 replacements = {
     "'parental level of education'": "'parental_level_of_education'",
