@@ -6,9 +6,8 @@ seaborn
 xgboost
 catboost
 dill
+flask
+gunicorn
 
 
 #-e .
-
-
-
